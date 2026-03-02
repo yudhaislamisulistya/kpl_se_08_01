@@ -16,3 +16,6 @@ class TransactionController:
     
     def get_transaction_by_code(self, code):
         return self.transaction_service.get_transaction_by_code(code)
+    
+    def get_transactions_by_user(self, user_id):
+        return self.transaction_service.get_transactions_by_user(user_id)
