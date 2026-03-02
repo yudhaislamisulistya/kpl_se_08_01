@@ -13,3 +13,6 @@ class TransactionController:
 
     def delete_transaction(self, transaction_id):
         return self.transaction_service.delete_transaction(transaction_id)
+    
+    def get_transaction_by_code(self, code):
+        return self.transaction_service.get_transaction_by_code(code)
