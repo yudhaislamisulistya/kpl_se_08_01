@@ -10,3 +10,5 @@ class AuthController:
 
     def register(self, username, password):
         return self.auth_service.register(username, password)
+    def forgot_password(self, email):
+        return self.auth_service.forgot_password(email)
